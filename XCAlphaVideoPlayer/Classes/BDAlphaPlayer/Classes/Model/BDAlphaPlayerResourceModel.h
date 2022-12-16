@@ -25,8 +25,7 @@
 
 /**
  @brief Initialize resource data from local path.
- @param directory Directory of resource file.
- @param orientation Orientation of MP4.
+ @param configuration Directory of resource file.
  @return resourceModel Resource data.
 */
 
