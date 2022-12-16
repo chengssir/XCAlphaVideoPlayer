@@ -19,8 +19,6 @@
 @property (nonatomic, strong, readwrite) BDAlphaPlayerResourceModel *model;
 @property (nonatomic, assign, readwrite) BDAlphaPlayerPlayState state;
 
-@property (nonatomic, weak, nullable) id<BDAlphaPlayerMetalViewDelegate> delegate;
-
 @property (nonatomic, assign) CGRect renderSuperViewFrame;
 @property (nonatomic, strong) MTKView *mtkView;
 @property (nonatomic, strong) BDAlphaPlayerMetalRenderer *metalRenderer;

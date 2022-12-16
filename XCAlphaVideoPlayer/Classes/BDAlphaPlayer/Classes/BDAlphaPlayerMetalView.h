@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BDAlphaPlayerMetalView : UIView
 
+@property (nonatomic, weak, nullable) id<BDAlphaPlayerMetalViewDelegate> delegate;
+
 - (instancetype)initWithDelegate:(nullable id<BDAlphaPlayerMetalViewDelegate>)delegate NS_DESIGNATED_INITIALIZER;
 
 /**
