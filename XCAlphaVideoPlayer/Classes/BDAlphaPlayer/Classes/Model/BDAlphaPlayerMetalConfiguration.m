@@ -13,7 +13,7 @@
 {
     BDAlphaPlayerMetalConfiguration *configuration = [[BDAlphaPlayerMetalConfiguration alloc] init];
     configuration.directory = @"";
-    configuration.orientation1 = BDAlphaPlayerOrientationPortrait;
+    configuration.orientation = 0;
     configuration.renderSuperViewFrame = CGRectZero;
     
     return configuration;

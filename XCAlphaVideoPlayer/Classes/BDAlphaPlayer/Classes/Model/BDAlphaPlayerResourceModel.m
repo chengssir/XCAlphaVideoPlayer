@@ -6,56 +6,44 @@
 //
 
 #import "BDAlphaPlayerResourceModel.h"
-
+#import "BDAlphaPlayerMetalConfiguration.h"
 #import "BDAlphaPlayerUtility.h"
 
 @interface BDAlphaPlayerResourceModel ()
-
-@property (nonatomic, readwrite, assign) BDAlphaPlayerOrientation currentOrientation;
 
 @end
 
 @implementation BDAlphaPlayerResourceModel
 
-+ (instancetype)resourceModelFromDirectory:(NSString *)directory orientation:(BDAlphaPlayerOrientation)orientation error:(NSError **)error {
-    if (![[NSFileManager defaultManager] fileExistsAtPath:directory]) {
++ (instancetype)resourceModelFromDirectory:(BDAlphaPlayerMetalConfiguration *)configuration  error:(NSError **)error {
+    if (![[NSFileManager defaultManager] fileExistsAtPath:configuration.directory]) {
         return nil;
     }
     
-    NSString *fileName = [directory lastPathComponent];
-    NSString *currentDirectoryPath = [directory stringByDeletingLastPathComponent];
-
-    BDAlphaPlayerResourceModel *resourceModel = [BDAlphaPlayerUtility createModelFromDictionary:fileName];
-    if (resourceModel) {
-        resourceModel.directory = currentDirectoryPath;
-        resourceModel.currentOrientation = orientation;
-        [resourceModel pr_replenish];
-        if (BDAlphaPlayerOrientationPortrait == resourceModel.currentOrientation) {
-            resourceModel.currentOrientationResourceInfo = resourceModel.portraitResourceInfo;
-        } else {
-            resourceModel.currentOrientationResourceInfo = resourceModel.landscapeResourceInfo;
-        }
-        BOOL isAvailable = [resourceModel.currentOrientationResourceInfo resourceAvailable];
-        if (!isAvailable) {
-            *error = [NSError errorWithDomain:BDAlphaPlayerErrorDomain code:BDAlphaPlayerErrorConfigAvailable userInfo:@{NSLocalizedDescriptionKey:[NSString stringWithFormat:@"config.json data not available %@", directory]}];
-            resourceModel = nil;
-        }
+    NSString *fileName = [configuration.directory lastPathComponent];
+    NSString *currentDirectoryPath = [configuration.directory stringByDeletingLastPathComponent];
+    BDAlphaPlayerResourceModel *resourceModel = [[BDAlphaPlayerResourceModel alloc] init];
+    BDAlphaPlayerResourceInfo *info = [[BDAlphaPlayerResourceInfo alloc] init];
+    info.contentMode = configuration.orientation;
+    info.resourceName = fileName;
+    resourceModel.currentOrientationResourceInfo = info;
+    resourceModel.directory = currentDirectoryPath;
+    [resourceModel pr_replenish];
+    
+    BOOL isAvailable = [resourceModel.currentOrientationResourceInfo resourceAvailable];
+    if (!isAvailable) {
+        *error = [NSError errorWithDomain:BDAlphaPlayerErrorDomain code:BDAlphaPlayerErrorConfigAvailable userInfo:@{NSLocalizedDescriptionKey:[NSString stringWithFormat:@"config.json data not available %@", configuration.directory]}];
+        resourceModel = nil;
     }
     return resourceModel;
 }
 
 - (void)pr_replenish
 {
-    if (self.portraitResourceInfo.resourceName.length) {
-        self.portraitResourceInfo.resourceFilePath = [self.directory stringByAppendingPathComponent:self.portraitResourceInfo.resourceName];
-        self.portraitResourceInfo.resourceFileURL = self.portraitResourceInfo.resourceFilePath ? [NSURL fileURLWithPath:self.portraitResourceInfo.resourceFilePath] : nil;
+    if (self.currentOrientationResourceInfo.resourceName.length) {
+        self.currentOrientationResourceInfo.resourceFilePath = [self.directory stringByAppendingPathComponent:self.currentOrientationResourceInfo.resourceName];
+        self.currentOrientationResourceInfo.resourceFileURL = self.currentOrientationResourceInfo.resourceFilePath ? [NSURL fileURLWithPath:self.currentOrientationResourceInfo.resourceFilePath] : nil;
     }
-    
-    if (self.landscapeResourceInfo.resourceName.length) {
-        self.landscapeResourceInfo.resourceFilePath = [self.directory stringByAppendingPathComponent:self.landscapeResourceInfo.resourceName];
-        self.landscapeResourceInfo.resourceFileURL = self.landscapeResourceInfo.resourceFilePath ? [NSURL fileURLWithPath:self.landscapeResourceInfo.resourceFilePath] : nil;
-    }
-    
 }
 
 @end

@@ -62,7 +62,7 @@
     NSAssert(!CGRectIsEmpty(configuration.renderSuperViewFrame), @"You need to initialize renderSuperViewFrame before playing");
     NSError *error = nil;
     self.renderSuperViewFrame = configuration.renderSuperViewFrame;
-    self.model = [BDAlphaPlayerResourceModel resourceModelFromDirectory:configuration.directory orientation:configuration.orientation1 error:&error];
+    self.model = [BDAlphaPlayerResourceModel resourceModelFromDirectory:configuration error:&error];
     if (error) {
         [self didFinishPlayingWithError:error];
         return;

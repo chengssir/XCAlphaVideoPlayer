@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @brief The orientation you wanna play for.
 */
-@property (nonatomic, assign) BDAlphaPlayerOrientation orientation1;
+@property (nonatomic, assign) BDAlphaPlayerContentMode orientation;
 
 /**
  @brief Frame of super view.The final frame of rendering will be decided by contentMode and renderSuperViewFrame.

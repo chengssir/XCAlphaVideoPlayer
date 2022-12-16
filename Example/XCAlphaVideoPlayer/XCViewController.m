@@ -41,8 +41,7 @@
     BDAlphaPlayerMetalConfiguration *configuration = [BDAlphaPlayerMetalConfiguration defaultConfiguration];
     configuration.directory = testResourcePath;
     configuration.renderSuperViewFrame = self.view.frame;
-    configuration.orientation1 = BDAlphaPlayerOrientationPortrait;
-    
+    configuration.orientation = 2;
     [self.metalView playWithMetalConfiguration:configuration];
 }
 

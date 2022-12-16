@@ -13,23 +13,6 @@ NSString *const BDAlphaPlayerErrorDomain = @"BDAlphaPlayerErrorDomain";
 
 @implementation BDAlphaPlayerUtility
 
-+ (BDAlphaPlayerResourceModel *)createModelFromDictionary:(NSString *)path
-{
-    BDAlphaPlayerResourceModel *model = [[BDAlphaPlayerResourceModel alloc] init];
-    BDAlphaPlayerResourceInfo *info = [[BDAlphaPlayerResourceInfo alloc] init];
-    info.contentMode = 2;
-    info.resourceName = path;
-    model.portraitResourceInfo = info;
-//0 2 3在半屏会拉伸 3
-    BDAlphaPlayerResourceInfo *info1 = [[BDAlphaPlayerResourceInfo alloc] init];
-    info1.contentMode = 8;
-    info1.resourceName = path;
-    model.landscapeResourceInfo = info1;
-    
-    return model;
-}
-
-
 + (NSError *)createErrorForDictionary:(NSDictionary *)dictionary
 {
     return [NSError errorWithDomain:BDAlphaPlayerErrorDomain code:BDAlphaPlayerErrorConfigResolve userInfo:@{NSLocalizedDescriptionKey:[NSString stringWithFormat:@"config.json serialization fail at %@", dictionary]}];

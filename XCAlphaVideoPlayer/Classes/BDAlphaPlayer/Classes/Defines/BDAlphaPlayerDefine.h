@@ -7,10 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger, BDAlphaPlayerOrientation) {
-    BDAlphaPlayerOrientationPortrait = 0,
-    BDAlphaPlayerOrientationLandscape = 1,
-};
+//typedef NS_ENUM(NSUInteger, BDAlphaPlayerOrientation) {
+//    BDAlphaPlayerOrientationPortrait = 0,
+//    BDAlphaPlayerOrientationLandscape = 1,
+//};
 
 typedef NS_ENUM(NSInteger, BDAlphaPlayerErrorCode) {
     BDAlphaPlayerErrorCodeFile = -1,
