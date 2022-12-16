@@ -1,0 +1,16 @@
+PODS:
+  - XCAlphaVideoPlayer (0.1.0)
+
+DEPENDENCIES:
+  - XCAlphaVideoPlayer (from `../`)
+
+EXTERNAL SOURCES:
+  XCAlphaVideoPlayer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XCAlphaVideoPlayer: 5cf9f49f37606c5451712373c60e034fa5d41ead
+
+PODFILE CHECKSUM: 0cc87d70a36df614c0957830ec2f3b30435d1d87
+
+COCOAPODS: 1.11.3

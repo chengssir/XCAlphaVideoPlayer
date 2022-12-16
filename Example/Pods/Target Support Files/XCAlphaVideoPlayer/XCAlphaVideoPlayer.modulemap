@@ -1,0 +1,6 @@
+framework module XCAlphaVideoPlayer {
+  umbrella header "XCAlphaVideoPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

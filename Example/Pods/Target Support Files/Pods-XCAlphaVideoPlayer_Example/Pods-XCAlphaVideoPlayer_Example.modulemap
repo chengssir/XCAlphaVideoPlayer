@@ -1,0 +1,6 @@
+framework module Pods_XCAlphaVideoPlayer_Example {
+  umbrella header "Pods-XCAlphaVideoPlayer_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

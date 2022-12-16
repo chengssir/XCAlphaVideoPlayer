@@ -1,0 +1,32 @@
+{
+  "name": "XCAlphaVideoPlayer",
+  "version": "0.1.0",
+  "summary": "A short description of XCAlphaVideoPlayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/guoshuai.cheng@holla.world/XCAlphaVideoPlayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "guoshuai.cheng@holla.world": "guoshuai.cheng@holla.world"
+  },
+  "source": {
+    "git": "https://github.com/guoshuai.cheng@holla.world/XCAlphaVideoPlayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "XCAlphaVideoPlayer/Classes/**/*",
+  "resource_bundles": {
+    "XCAlphaVideoPlayer": [
+      "XCAlphaVideoPlayer/Classes/BDAlphaPlayer/**/*.metal"
+    ]
+  },
+  "libraries": "c++",
+  "frameworks": [
+    "UIKit",
+    "CoreVideo"
+  ]
+}
