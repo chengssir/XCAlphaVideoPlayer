@@ -114,6 +114,17 @@
     NSURL *url = [self.model.currentOrientationResourceInfo resourceFileURL];
     NSError *error = nil;
     BDAlphaPlayerAssetReaderOutput *output = [[BDAlphaPlayerAssetReaderOutput alloc] initWithURL:url error:&error];
+    NSError *error1 = [NSError errorWithDomain:@"文件路径损坏" code:-101 userInfo:nil];
+
+    if (output.videoSize.width == 0 || output.videoSize.height == 0 ) {
+        [self didFinishPlayingWithError:error1];
+        return;
+    }
+    
+    if (self.renderSuperViewFrame.size.width == 0 || self.renderSuperViewFrame.size.height == 0 ) {
+        [self didFinishPlayingWithError:error1];
+        return;
+    }
     CGRect rederFrame = [BDAlphaPlayerUtility frameFromVideoSize:output.videoSize renderSuperViewFrame:self.renderSuperViewFrame resourceModel:self.model];
     self.frame = rederFrame;
     
