@@ -85,7 +85,7 @@
 		5E43A72712ACAA85001441CFA117DF52 /* BDAlphaPlayerMetalRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDAlphaPlayerMetalRenderer.h; sourceTree = "<group>"; };
 		68FFF405AD30AB95AE1EFDBFB6E41379 /* XCAlphaVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCAlphaVideoPlayer.debug.xcconfig; sourceTree = "<group>"; };
 		6EDB1F348CADD8C40D28A3968CF2916C /* BDAlphaPlayerAssetReaderOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDAlphaPlayerAssetReaderOutput.h; sourceTree = "<group>"; };
-		716BB88FA5E64EF288E0186E1D40B41B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		716BB88FA5E64EF288E0186E1D40B41B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		7491278CD50599E96BACDC45E4668918 /* BDAlphaPlayerDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDAlphaPlayerDefine.h; sourceTree = "<group>"; };
 		7550E17F6CDE2E939C7C9E1A55CE4099 /* Pods-XCAlphaVideoPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCAlphaVideoPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F2C2BB10EFE7E6CBBBD1E90CD394D84 /* XCAlphaVideoPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCAlphaVideoPlayer-dummy.m"; sourceTree = "<group>"; };
@@ -93,15 +93,15 @@
 		8F582C4C1EE04973D1FE4DFB5878D1F2 /* Pods-XCAlphaVideoPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCAlphaVideoPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		927B06E1A3FF4C6740C4216F8B2E04D7 /* XCAlphaVideoPlayer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCAlphaVideoPlayer; path = XCAlphaVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		960FFEB80B3EF720C9947253D55070D8 /* BDAlphaPlayerMetalView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BDAlphaPlayerMetalView.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DBE340E3AD8D795F6A93B38215B3FA1 /* BDAlphaPlayerResourceModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDAlphaPlayerResourceModel.h; sourceTree = "<group>"; };
 		A43253599038725BC4ECF52BDE56C682 /* Pods-XCAlphaVideoPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCAlphaVideoPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AAA3D78B24B79025CC4725FF7A34A369 /* BDAlphaPlayerMetalShaderType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDAlphaPlayerMetalShaderType.h; sourceTree = "<group>"; };
 		AB0D199EB9149C48D9FD4F057B31B500 /* Pods-XCAlphaVideoPlayer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XCAlphaVideoPlayer_Example-umbrella.h"; sourceTree = "<group>"; };
 		AF8E0C67B7B1000106BA27391D38F923 /* BDAlphaPlayerUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BDAlphaPlayerUtility.h; sourceTree = "<group>"; };
 		B0ADF74290C7FDFC01D835145ABEEA3C /* BDAlphaPlayerResourceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BDAlphaPlayerResourceInfo.m; sourceTree = "<group>"; };
-		B5406A330ADF65961368B4B959205256 /* XCAlphaVideoPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XCAlphaVideoPlayer.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		B5DCBE95CF3B39E5F82C064F9C5EC957 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B5406A330ADF65961368B4B959205256 /* XCAlphaVideoPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XCAlphaVideoPlayer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B5DCBE95CF3B39E5F82C064F9C5EC957 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B9F12E830AB461A4D61F4301D3CA4783 /* BDAlphaPlayerMetalRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BDAlphaPlayerMetalRenderer.m; sourceTree = "<group>"; };
 		BD1B02C0D6D4D1D1389D7A271395034D /* Pods-XCAlphaVideoPlayer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XCAlphaVideoPlayer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C0494B268C448A6FA0AA07B34C7C284F /* Pods-XCAlphaVideoPlayer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XCAlphaVideoPlayer_Tests.modulemap"; sourceTree = "<group>"; };
@@ -115,10 +115,10 @@
 		DE0C39F532C86BC2AC94E83EF5BEAA17 /* Pods-XCAlphaVideoPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XCAlphaVideoPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E2D858E95F19835ABEF882ACA0085C38 /* Pods-XCAlphaVideoPlayer_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-XCAlphaVideoPlayer_Tests"; path = Pods_XCAlphaVideoPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50EA7E39705F898E8A2E0F70147FABF /* XCAlphaVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCAlphaVideoPlayer.release.xcconfig; sourceTree = "<group>"; };
-		E52DF91C919E71F4ADB52F9D5598E449 /* bd_shaders.metal */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.metal; path = bd_shaders.metal; sourceTree = "<group>"; };
+		E52DF91C919E71F4ADB52F9D5598E449 /* bd_shaders.metal */ = {isa = PBXFileReference; includeInIndex = 1; path = bd_shaders.metal; sourceTree = "<group>"; };
 		E58953B8253294CE3DE26612158BF527 /* BDAlphaPlayerMetalConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BDAlphaPlayerMetalConfiguration.m; sourceTree = "<group>"; };
 		EE191232D02CE2A5442238FDE218F133 /* BDAlphaPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BDAlphaPlayer.h; path = XCAlphaVideoPlayer/Classes/BDAlphaPlayer/BDAlphaPlayer.h; sourceTree = "<group>"; };
-		FFCAD44E1BBF9978E88C0D963F22D9B2 /* BDAlphaPlayerAssetReaderOutput.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = BDAlphaPlayerAssetReaderOutput.mm; sourceTree = "<group>"; };
+		FFCAD44E1BBF9978E88C0D963F22D9B2 /* BDAlphaPlayerAssetReaderOutput.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = BDAlphaPlayerAssetReaderOutput.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +168,7 @@
 				9DBE340E3AD8D795F6A93B38215B3FA1 /* BDAlphaPlayerResourceModel.h */,
 				451C0ADF54EA79FDE7255E9C34CE24D8 /* BDAlphaPlayerResourceModel.m */,
 			);
+			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -215,6 +216,7 @@
 				AF8E0C67B7B1000106BA27391D38F923 /* BDAlphaPlayerUtility.h */,
 				5A5FBB8C008344830EE2777DAE4B190C /* BDAlphaPlayerUtility.m */,
 			);
+			name = Utils;
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -224,6 +226,7 @@
 				6EDB1F348CADD8C40D28A3968CF2916C /* BDAlphaPlayerAssetReaderOutput.h */,
 				FFCAD44E1BBF9978E88C0D963F22D9B2 /* BDAlphaPlayerAssetReaderOutput.mm */,
 			);
+			name = Reader;
 			path = Reader;
 			sourceTree = "<group>";
 		};
@@ -293,6 +296,7 @@
 			children = (
 				7491278CD50599E96BACDC45E4668918 /* BDAlphaPlayerDefine.h */,
 			);
+			name = Defines;
 			path = Defines;
 			sourceTree = "<group>";
 		};
@@ -332,6 +336,7 @@
 				B9F12E830AB461A4D61F4301D3CA4783 /* BDAlphaPlayerMetalRenderer.m */,
 				AAA3D78B24B79025CC4725FF7A34A369 /* BDAlphaPlayerMetalShaderType.h */,
 			);
+			name = Render;
 			path = Render;
 			sourceTree = "<group>";
 		};
@@ -627,24 +632,6 @@
 			};
 			name = Debug;
 		};
-		4ABDA13C4E5AE5615DA97D8DC07DE6B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68FFF405AD30AB95AE1EFDBFB6E41379 /* XCAlphaVideoPlayer.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XCAlphaVideoPlayer";
-				IBSC_MODULE = XCAlphaVideoPlayer;
-				INFOPLIST_FILE = "Target Support Files/XCAlphaVideoPlayer/ResourceBundle-XCAlphaVideoPlayer-XCAlphaVideoPlayer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = XCAlphaVideoPlayer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		668024AC4D6755E5FD4283E2530A8903 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE0C39F532C86BC2AC94E83EF5BEAA17 /* Pods-XCAlphaVideoPlayer_Tests.release.xcconfig */;
@@ -736,7 +723,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -811,7 +799,7 @@
 			};
 			name = Debug;
 		};
-		CCDF966F9540316ADF82889A7C8D8253 /* Release */ = {
+		B8E1E0A19CD420B067B3899238F1F8DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E50EA7E39705F898E8A2E0F70147FABF /* XCAlphaVideoPlayer.release.xcconfig */;
 			buildSettings = {
@@ -828,6 +816,24 @@
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
+		};
+		CA17653F340A576957FB6152E2E8A8DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68FFF405AD30AB95AE1EFDBFB6E41379 /* XCAlphaVideoPlayer.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XCAlphaVideoPlayer";
+				IBSC_MODULE = XCAlphaVideoPlayer;
+				INFOPLIST_FILE = "Target Support Files/XCAlphaVideoPlayer/ResourceBundle-XCAlphaVideoPlayer-XCAlphaVideoPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = XCAlphaVideoPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
 		};
 		D1C2AC5A07BD3F503DB72A5A535DEDC4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -988,8 +994,8 @@
 		6809E6A0206AC416B3A4D08BFB5CE56D /* Build configuration list for PBXNativeTarget "XCAlphaVideoPlayer-XCAlphaVideoPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4ABDA13C4E5AE5615DA97D8DC07DE6B7 /* Debug */,
-				CCDF966F9540316ADF82889A7C8D8253 /* Release */,
+				CA17653F340A576957FB6152E2E8A8DD /* Debug */,
+				B8E1E0A19CD420B067B3899238F1F8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
