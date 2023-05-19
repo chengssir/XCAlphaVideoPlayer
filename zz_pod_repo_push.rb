@@ -79,7 +79,7 @@ def pushCode(text = "")
         system "git tag -d #{$Project_Tag}"
         system "git add ."
         system "git commit -m '#{text}=>更新版本号#{$Project_Tag}'"
-        system "git push -u origin master"  
+        system "git push -u origin main"  
         system "git tag #{$Project_Tag}"
         system "git push --tags"
         puts "\n   \033[41m 提交Framework Tag版本#{$Project_Tag} \033[0m\n\n"

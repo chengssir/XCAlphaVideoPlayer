@@ -1,5 +1,5 @@
 PODS:
-  - XCAlphaVideoPlayer (1.0.6)
+  - XCAlphaVideoPlayer (1.0.7)
 
 DEPENDENCIES:
   - XCAlphaVideoPlayer (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XCAlphaVideoPlayer: 5fee4875eefcf0c35cb196967903883ed634d1b5
+  XCAlphaVideoPlayer: a52e3e3acb7f25f715512cc73382b179a92572b3
 
 PODFILE CHECKSUM: 0cc87d70a36df614c0957830ec2f3b30435d1d87
 
