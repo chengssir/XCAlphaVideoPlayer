@@ -1,6 +1,6 @@
 {
   "name": "XCAlphaVideoPlayer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "summary": "A short description of XCAlphaVideoPlayer.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/chengssir/XCAlphaVideoPlayer",
@@ -13,12 +13,14 @@
   },
   "source": {
     "git": "https://github.com/chengssir/XCAlphaVideoPlayer.git",
-    "tag": "1.0.4"
+    "tag": "1.0.5"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "vendored_frameworks": "Frameworks/XCAlphaVideoPlayer.xcframework",
+  "ios": {
+    "vendored_frameworks": "Frameworks/XCAlphaVideoPlayer.xcframework"
+  },
   "resource_bundles": {
     "XCAlphaVideoPlayer": [
       "XCAlphaVideoPlayer/Classes/BDAlphaPlayer/**/*.metal"

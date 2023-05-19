@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XCAlphaVideoPlayer'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'A short description of XCAlphaVideoPlayer.'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   if ENV['use_code'] or ENV[s.name+'_use_code']
     s.source_files = 'XCAlphaVideoPlayer/Classes/**/*'
   else #Framework模式
-    s.vendored_frameworks = 'Frameworks/XCAlphaVideoPlayer.xcframework'
+    s.ios.vendored_frameworks = 'Frameworks/XCAlphaVideoPlayer.xcframework'
   end
   
   s.resource_bundles = {
