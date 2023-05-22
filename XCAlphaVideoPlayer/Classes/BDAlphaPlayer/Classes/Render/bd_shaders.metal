@@ -7,7 +7,7 @@
 //
 
 #include <metal_stdlib>
-//#include "BDAlphaPlayerMetalShaderType.h"
+#include "BDAlphaPlayerMetalShaderType.h"
 
 using namespace metal;
 
